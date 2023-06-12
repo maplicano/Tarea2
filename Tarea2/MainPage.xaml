@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea2.MainPage"
+             BackgroundColor="Gray">
+
+    <StackLayout>
+        <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+            <Label Text="Ejercicio 1.2" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Label Text="Datos Personales" FontSize="Title" Padding="30,10,30,10" HorizontalTextAlignment="Center" TextColor="White" TextDecorations="Underline" FontAttributes="Bold"/>
+
+        <Frame BackgroundColor="#FFF" Padding="5" Margin="30,0,30,0" CornerRadius="4">
+            <Entry Placeholder="Ingrese su Nombre" Keyboard="Text" x:Name="nombre" HorizontalTextAlignment="Center"/>
+        </Frame>
+        <Frame BackgroundColor="#FFF" Padding="5" Margin="30,0,30,0" CornerRadius="4">
+            <Entry Placeholder="Ingrese su Apellido" Keyboard="Text" x:Name="apellido" HorizontalTextAlignment="Center"/>
+        </Frame>
+        <Frame BackgroundColor="#FFF" Padding="5" Margin="30,0,30,0" CornerRadius="4">
+            <Entry Placeholder="Ingrese su Edad" Keyboard="Text" x:Name="edad" HorizontalTextAlignment="Center"/>
+        </Frame>
+        <Frame BackgroundColor="#FFF" Padding="5" Margin="30,0,30,0" CornerRadius="4">
+            <Entry Placeholder="Ingrese su Correo" Keyboard="Text" x:Name="correo" HorizontalTextAlignment="Center"/>
+        </Frame>
+
+
+        <Button Text="Enviar informacion" BackgroundColor="Black" TextColor="WhiteSmoke" Margin="30,25,30,0" Clicked="Button_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>
